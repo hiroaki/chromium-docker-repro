@@ -1,0 +1,34 @@
+# Git
+.git
+.gitignore
+
+# GitHub
+.github
+
+# Documentation
+README.md
+LICENSE
+
+# macOS
+.DS_Store
+
+# Editors
+.vscode
+.idea
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+
+# Docker
+Dockerfile*
+docker-compose*.yml
+compose*.yml
+
+# Misc
+.env
+.env.*
+
