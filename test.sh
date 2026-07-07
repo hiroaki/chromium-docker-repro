@@ -11,7 +11,7 @@ cat /etc/os-release
 echo
 
 echo "=== Chromium ==="
-which chromium
+command -v chromium
 chromium --version
 echo
 
