@@ -1,0 +1,25 @@
+name: Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Docker version
+        run: |
+          docker version
+          docker info
+
+      - name: Build image
+        run: docker build --pull -t chromium-test .
+
+      - name: Inspect image
+        run: docker image inspect chromium-test
+
+      - name: Run test
+        run: docker run --rm chromium-test

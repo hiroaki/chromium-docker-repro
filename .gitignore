@@ -1,0 +1,40 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors
+.vscode/
+.idea/
+*.code-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Environment
+.env
+.env.*
+
+# Docker
+*.tar
+
+# Test output
+core
+core.*
+*.core
+
+# Chromium
+chrome_debug.log
+
+# Shell history
+.history
+
