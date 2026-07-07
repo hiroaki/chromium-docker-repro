@@ -10,13 +10,13 @@ uname -a
 cat /etc/os-release
 echo
 
-echo "=== Chromium ==="
-command -v chromium
-chromium --version
+echo "=== Google Chrome ==="
+command -v google-chrome
+google-chrome --version
 echo
 
 echo "=== Running ==="
-exec chromium \
+exec google-chrome \
   --headless \
   --disable-gpu \
   --dump-dom \
