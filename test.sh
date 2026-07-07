@@ -18,7 +18,7 @@ echo
 echo "=== Running ==="
 exec chromium \
   --headless \
-  --no-sandbox \
   --disable-gpu \
   --dump-dom \
+  $( [ "$(id -u)" -eq 0 ] && printf '%s' '--no-sandbox ' )\
   about:blank
